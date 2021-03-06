@@ -3,94 +3,124 @@
   <head>
     <meta charset="utf-8" />
     <title>My Personal Website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
   </head>
-  <body>
-    <header>
-      <h1>Manuel Remer</h1>
-      <nav>
-        <a href="#headline_of_contact">Contact</a>
-        <a href="#head_of_biography">Biography</a>
-      </nav>
-    </header>
 
-    <main>
-      <img src="images/img_of_Manuel.jpg" alt="Image of Manuel Remer" />
-      <p>
-        orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies
-        sapien sit amet massa accumsan laoreet. In sagittis urna in neque
-        faucibus fringilla. Integer at lorem vitae turpis hendrerit consequat a
-        at libero.
-      </p>
+  <div class="grid-layout-body">
+    <body>
+      <header class="grid-item-header">
+        <h1>Manuel Remer</h1>
+        <nav>
+          <!-- navigation board. I tried this using an <ul>-element, but this was rendered  to far to the right or left.-->
+          <div class="flex-nav-container">
+            <p class="flex-nav-element">About me</p>
+            <p class="flex-nav-element">Recoms</p>
+            <p class="flex-nav-element">Contact</p>
+            <p class="flex-nav-element">Biography</p>
+          </div>
+        </nav>
+      </header>
 
-      <section>
-        <article>
-          <h2>Likes</h2>
+      <main class="grid-item-main">
+        <section id="flex-cont-intro">
+          <div class="flex-itm-intro-img">
+            <div class="image-profile-frame"></div>
+          </div>
+          <div class="flex-itm-intro-txt">
+            <p>
+              "Hi, I am learning webdesign at neuefische. I am just taking my
+              first steps by creating this website."
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <article>
+            <h2>Likes</h2>
+            <div class="flex-cont-likes">
+              <div class="flex-itm-likes" class="slacklining">
+                Lead climbing
+              </div>
+              <div class="flex-itm-likes">orem ipsum dolor</div>
+              <div class="flex-itm-likes">Vegetables</div>
+            </div>
+          </article>
+          <article>
+            <h2>Dislikes</h2>
+            <ul>
+              <li>To run out of time</li>
+              <li>Corona ipsum dolor</li>
+            </ul>
+          </article>
+        </section>
+
+        <section>
+          <h2 id="headline_of_contact">Contact</h2>
+          <p>Feel free to contact me or just check my social media</p>
+          <h3>Num:</h3>
+          <p>0176/64033462</p>
+          <h3>Mail:</h3>
+          <p>manuelremer@web.de</p>
+
+          <div class="sm-container">
+            <a href="https://github.com/ManuelRemer" target="_blank">
+              <img
+                src="images/Octocat.jpg"
+                alt="Here's an image of Octocat"
+                class="img_socialmedia"
+                class="sm-block"
+            /></a>
+            <a href="https://codepen.io/" target="_blank"
+              ><img
+                src="images/codepen.webp"
+                alt="Here's the codepen Logo"
+                class="img_socialmedia"
+                class="sm-block"
+            /></a>
+            <a href="https://de.linkedin.com" target="_blank"
+              ><img
+                src="images/codepen.webp"
+                alt="Here's the linkedin Logo"
+                class="img_socialmedia"
+                class="sm-block"
+            /></a>
+          </div>
+        </section>
+
+        <section>
+          <h2>About myself</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            ultricies sapien sit amet massa accumsan laoreet. In sagittis urna
+            in neque faucibus fringilla. Integer at lorem vitae turpis hendrerit
+            consequat a at libero. Nulla condimentum mi ac odio posuere,
+            elementum lobortis leo sollicitudin. Morbi euismod vehicula ligula
+            quis sagittis. Donec eu tincidunt sapien. Vivamus vitae metus
+            faucibus, placerat libero nec, fermentum felis. Mauris egestas purus
+            lacus, id ultrices nulla viverra vitae. Sed sed diam vestibulum,
+            ultricies nibh vitae, tincidunt metus. Proin ac odio semper,
+            faucibus felis et, hendrerit metus. Sed quis dictum ex. Donec
+            posuere tortor ac accumsan placerat.
+          </p>
+        </section>
+
+        <section>
+          <h2 id="head_of_biography">Biography</h2>
           <ul>
-            <li>Lead climbing</li>
-            <li>Slacklining</li>
-            <li>orem ipsum dolor</li>
-            <li>Vegetables</li>
+            <li>2021 Eintrag</li>
+            <li>2015 Eintrag</li>
+            <li>2013 Eintrag</li>
+            <li>2009 Eintrag</li>
+            <li>2001 Eintrag</li>
           </ul>
-        </article>
-        <article>
-          <h2>Dislikes</h2>
-          <ul>
-            <li>To run out of time</li>
-            <li>Corona ipsum dolor</li>
-          </ul>
-        </article>
-      </section>
-
-      <section>
-        <h2 id="headline_of_contact">Contact</h2>
-        <p>Feel free to contact me or just check my social media</p>
-        <h3>Num:</h3>
-        <p>0176/64033462</p>
-        <h3>Mail:</h3>
-        <p>manuelremer@web.de</p>
-
-        <div>
-          <img src="images/Octocat.jpg" alt="Here's an image of Octocat" />
-          <a href="https://github.com/ManuelRemer" target="_blank">Git Hub</a>
-        </div>
-        <div>
-          <img src="images/codepen.webp" alt="Here's the codepen Logo" />
-          <a href="https://codepen.io/" target="_blank">Codepen</a>
-        </div>
-        <div>
-          <img src="images/LI-In-Bug.png" alt="Here's the linkedin Logo" />
-          <a href="https://de.linkedin.com" target="_blank">Linkedin</a>
-        </div>
-      </section>
-
-      <section>
-        <h2>About myself</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-          ultricies sapien sit amet massa accumsan laoreet. In sagittis urna in
-          neque faucibus fringilla. Integer at lorem vitae turpis hendrerit
-          consequat a at libero. Nulla condimentum mi ac odio posuere, elementum
-          lobortis leo sollicitudin. Morbi euismod vehicula ligula quis
-          sagittis. Donec eu tincidunt sapien. Vivamus vitae metus faucibus,
-          placerat libero nec, fermentum felis. Mauris egestas purus lacus, id
-          ultrices nulla viverra vitae. Sed sed diam vestibulum, ultricies nibh
-          vitae, tincidunt metus. Proin ac odio semper, faucibus felis et,
-          hendrerit metus. Sed quis dictum ex. Donec posuere tortor ac accumsan
-          placerat.
-        </p>
-      </section>
-
-      <section>
-        <h2 id="head_of_biography">Biography</h2>
-        <ul>
-          <li>2021 Eintrag</li>
-          <li>2015 Eintrag</li>
-          <li>2013 Eintrag</li>
-          <li>2009 Eintrag</li>
-          <li>2001 Eintrag</li>
-        </ul>
-      </section>
-    </main>
-    <footer>made with web technology</footer>
-  </body>
+        </section>
+      </main>
+      <footer class="grid-item-footer">made with web technology</footer>
+    </body>
+  </div>
 </html>
