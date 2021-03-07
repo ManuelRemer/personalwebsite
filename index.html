@@ -11,17 +11,17 @@
     <link href="style.css" rel="stylesheet" />
   </head>
 
-  <div class="grid-layout-body">
-    <body>
+  <body>
+    <div class="grid-layout-body">
       <header class="grid-item-header">
         <h1>Manuel Remer</h1>
         <nav>
           <!-- navigation board. I tried this using an <ul>-element, but this was rendered  to far to the right or left.-->
           <div class="flex-nav-container">
-            <p class="flex-nav-element">About me</p>
-            <p class="flex-nav-element">Recoms</p>
-            <p class="flex-nav-element">Contact</p>
-            <p class="flex-nav-element">Biography</p>
+            <a href="#about" class="flex-nav-element">About me</a>
+            <a href="#likes" class="flex-nav-element">Likes</a>
+            <a href="#contact" class="flex-nav-element">Contact</a>
+            <a href="#bio" class="flex-nav-element">Biography</a>
           </div>
         </nav>
       </header>
@@ -40,99 +40,124 @@
         </section>
 
         <section>
-          <article>
-            <h2>Likes</h2>
+          <h2 id="likes">Likes</h2>
+          <nav class="nav-activities">
             <div class="flex-cont-likes">
-              <div class="flex-itm-likes">
-                <div class="gym-climbing"></div>
-              </div>
-              <div class="flex-itm-likes">
-                <div class="lead-climbing"></div>
-              </div>
-              <div class="flex-itm-likes">
-                <div class="slacklining"></div>
-              </div>
-              <div class="flex-itm-likes">
-                <div class="wood"></div>
-              </div>
-
-              Lead climbing
-
-              <div class="flex-itm-likes">orem ipsum dolor</div>
-              <div class="flex-itm-likes">Vegetables</div>
+            <div class="flex-itm-likes">
+              <a href="https://www.dav-hamburg.de/kletterzentrum#"><div class="gym-climbing"></div></a>
+              <!--alt-text? Here or in stylesheet-->
             </div>
-          </article>
-          <article>
-            <h2>Dislikes</h2>
-            <ul>
-              <li>To run out of time</li>
-              <li>Corona ipsum dolor</li>
-            </ul>
-          </article>
+            <div class="flex-itm-likes">
+              <a href="#leadclimb-txt"><div class="lead-climbing"></div></a>
+              <!--alt-text? Here or in stylesheet-->
+            </div>
+            <div class="flex-itm-likes">
+              <a href="#slacklining-txt"><div class="slacklining"></div></a>
+              <!--alt-text? Here or in stylesheet-->
+            </div>
+            <div class="flex-itm-likes">
+              <div class="wood"></div>
+              <!--alt-text? Here or in stylesheet-->
+            </div></nav>
         </section>
-
+        <article class="body-txt">
+          <div id="leadclimb-txt">
+            <h3>Lead climbing</h3>
+         
+            <p class="source">From Wikipedia, the free encyclopedia</p>
+            <p>
+              Lead climbing is a climbing style, predominantly used in 
+              rock climbing. In a roped party one climber has to take the 
+              lead while the other climbers follow.The lead climber wears 
+              a harness attached to a climbing rope, which in turn is 
+              connected to the other climbers below the lead climber. 
+              While ascending the route, the lead climber periodically 
+              connects the rope to protection equipment for safety in the 
+              event of a fall.
+            </p>
+          </div>
+        </article>
+        <article class="body-txt">
+          <div >
+            <h3 id="slacklining-txt">Slacklining</h3>
+         
+            <p class="source">From Wikipedia, the free encyclopedia</p>
+            <p>
+              Slacklining refers to the act of walking, running or balancing along a 
+              suspended length of flat webbing that is tensioned between two anchors. 
+              Slacklining is similar to slack rope walking and tightrope walking. Slacklines 
+              differ from tightwires and tightropes in the type of material used and the amount 
+              of tension applied during use. Slacklines are tensioned significantly less than 
+              tightropes or tightwires in order to create a dynamic line which will stretch and 
+              bounce like a long and narrow trampoline. Tension can be adjusted to suit the user, 
+              and different webbing may be used in various circumstances. 
+            </p>
+          </div>
+        </article>
         <section>
-          <h2 id="headline_of_contact">Contact</h2>
-          <p>Feel free to contact me or just check my social media</p>
-          <h3>Num:</h3>
-          <p>0176/64033462</p>
-          <h3>Mail:</h3>
-          <p>manuelremer@web.de</p>
+          <div id="contact">
+            <h2 id="headline_of_contact">Get in touch</h2>
+            <h3>Num:</h3>
+            <p>0176/64033462</p>
+            <h3>Mail:</h3>
+            <a href="mailto:manuelremer@web.de">manuelremer@web.de</a>
+            </div>
+          
 
-          <div class="sm-container">
-            <a href="https://github.com/ManuelRemer" target="_blank">
-              <img
-                src="images/Octocat.jpg"
-                alt="Here's an image of Octocat"
-                class="img_socialmedia"
-                class="sm-block"
-            /></a>
-            <a href="https://codepen.io/" target="_blank"
-              ><img
-                src="images/codepen.webp"
-                alt="Here's the codepen Logo"
-                class="img_socialmedia"
-                class="sm-block"
-            /></a>
-            <a href="https://de.linkedin.com" target="_blank"
-              ><img
-                src="images/codepen.webp"
-                alt="Here's the linkedin Logo"
-                class="img_socialmedia"
-                class="sm-block"
-            /></a>
+          <div class="sm-flex-container">
+          <div class="sm-flex-item">  <a href="https://github.com/ManuelRemer" target="_blank">
+            <img
+              src="images/Octocat.jpg"
+              alt="Here's an image of Octocat"
+              class="img_socialmedia"
+              class="sm-block"
+          /><p class="sm-name">GitHub</p></a></div>
+           <div class="sm-flex-item"> <a href="https://codepen.io/" target="_blank"
+            ><img
+              src="images/codepen.webp"
+              alt="Here's the codepen Logo"
+              class="img_socialmedia"
+              class="sm-block"
+          /><p class="sm-name">Codepen</p></a></div>
+           <div class="sm-flex-item"> <a href="https://de.linkedin.com" target="_blank"
+            ><img
+              src="images/linkedin.png"
+              alt="Here's the linkedin Logo"
+              class="img_socialmedia"
+              class="sm-block"
+          /><p class="sm-name">LinkedIn</p></a></div>
           </div>
         </section>
 
-        <section>
-          <h2>About myself</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            ultricies sapien sit amet massa accumsan laoreet. In sagittis urna
-            in neque faucibus fringilla. Integer at lorem vitae turpis hendrerit
-            consequat a at libero. Nulla condimentum mi ac odio posuere,
-            elementum lobortis leo sollicitudin. Morbi euismod vehicula ligula
-            quis sagittis. Donec eu tincidunt sapien. Vivamus vitae metus
-            faucibus, placerat libero nec, fermentum felis. Mauris egestas purus
-            lacus, id ultrices nulla viverra vitae. Sed sed diam vestibulum,
-            ultricies nibh vitae, tincidunt metus. Proin ac odio semper,
-            faucibus felis et, hendrerit metus. Sed quis dictum ex. Donec
-            posuere tortor ac accumsan placerat.
-          </p>
+        <section id="about">
+          <div class="body-txt"><h2>About me</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              ultricies sapien sit amet massa accumsan laoreet. In sagittis urna
+              in neque faucibus fringilla. Integer at lorem vitae turpis hendrerit
+              consequat a at libero. Nulla condimentum mi ac odio posuere,
+              elementum lobortis leo sollicitudin. Morbi euismod vehicula ligula
+              quis sagittis. Donec eu tincidunt sapien. Vivamus vitae metus
+              faucibus, placerat libero nec, fermentum felis. Mauris egestas purus
+              lacus, id ultrices nulla viverra vitae. Sed sed diam vestibulum,
+              ultricies nibh vitae, tincidunt metus. Proin ac odio semper,
+              faucibus felis et, hendrerit metus. Sed quis dictum ex. Donec
+              posuere tortor ac accumsan placerat.
+            </p></div>
         </section>
 
-        <section>
-          <h2 id="head_of_biography">Biography</h2>
-          <ul>
-            <li>2021 Eintrag</li>
-            <li>2015 Eintrag</li>
-            <li>2013 Eintrag</li>
-            <li>2009 Eintrag</li>
-            <li>2001 Eintrag</li>
-          </ul>
+        <section id="bio">
+<div class="body-txt">          <h2 id="head_of_biography">Biography</h2>
+  <ul class="bio-list">
+    <li>2021 Eintrag</li>
+    <li>2015 Eintrag</li>
+    <li>2013 Eintrag</li>
+    <li>2009 Eintrag</li>
+    <li>2001 Eintrag</li>
+  </ul></div>
         </section>
       </main>
       <footer class="grid-item-footer">made with web technology</footer>
-    </body>
-  </div>
+    </div>
+  </body>
 </html>

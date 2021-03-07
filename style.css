@@ -24,11 +24,11 @@
 body {
   font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
-  background-color: #ce890b;
+  background-color: #e6a937;
   box-sizing: border-box;
 }
 header {
-  background-color: greenyellow;
+  background-color: rgb(166, 213, 219);
   margin-bottom: 5px;
   padding: 10px;
 }
@@ -42,6 +42,14 @@ main {
 footer {
   background-color: darksalmon;
   margin-top: 5px;
+}
+
+a:visited {
+  color: red;
+}
+a:link {
+  text-decoration: none;
+  color: black;
 }
 /*more detailed styling on different elements from top to bottom*/
 /*header*/
@@ -62,6 +70,8 @@ h1 {
   padding: 0px 4px;
   margin: 2px 0px 0px 0px;
   border-radius: 10%;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 /*main*/
 /*intro-box with photo and short text*/
@@ -97,7 +107,9 @@ h1 {
   font-size: x-small;
   font-style: italic;
 }
-
+.nav-activities {
+  display: block;
+}
 .flex-cont-likes {
   display: flex;
   flex-wrap: wrap;
@@ -131,14 +143,39 @@ h1 {
   background-size: cover;
 }
 
+.body-txt {
+  padding: 5px;
+  margin-top: 10px;
+  background-color: rgb(233, 99, 222);
+}
+.leadclimb-txt {
+}
+#contact {
+  background-color: cornsilk;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sm-flex-conatiner {
+  display: flex;
+  flex-direction: column;
+}
+.sm-flex-item {
+  background-color: white;
+  align-items: center;
+  padding-top: 10px;
+}
 .img_socialmedia {
   width: 100px;
   height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.sm-conatiner {
-  display: flex;
-}
-.sm-block {
-  border: solid black;
+.sm-name {
+  background-color: black;
+  color: chartreuse;
+  text-align: center;
+  text-decoration: none;
 }
