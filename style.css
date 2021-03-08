@@ -2,7 +2,7 @@
 .grid-layout-body {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 280px 1fr;
+  grid-template-columns: 1fr 280px 1fr; /*1fr 280px 1fr;*/
   grid-template-rows: auto auto 80px;
 }
 
@@ -118,6 +118,11 @@ h1 {
 .flex-itm-likes {
   width: 1fr;
 }
+.likes-images {
+  width: 130px;
+  height: 130px;
+}
+
 .slacklining {
   width: 130px;
   height: 130px;
@@ -136,6 +141,7 @@ h1 {
   background-image: url("images/gym-climbing.jpg");
   background-size: cover;
 }
+
 .wood {
   width: 130px;
   height: 130px;
@@ -148,8 +154,7 @@ h1 {
   margin-top: 10px;
   background-color: rgb(233, 99, 222);
 }
-.leadclimb-txt {
-}
+
 #contact {
   background-color: cornsilk;
   padding: 5px;
