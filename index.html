@@ -9,38 +9,39 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,800&display=swap"
       rel="stylesheet"
     />
-    <link href="style.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
   </head>
 
   <body>
-    <div class="grid-layout-body">
+    <div class="grid-cont-body">
       <header class="grid-item-header">
         <h1>Manuel Remer</h1>
         <nav>
           <!-- navigation board. I tried this using an <ul>-element, but this was rendered  to far to the right or left.-->
           <ul class="flex-nav-container">
-            <li href="#about" class="flex-nav-element">About me</li>
-            <li href="#likes" class="flex-nav-element">Likes</li>
-            <li href="#contact" class="flex-nav-element">Contact</li>
-            <li href="#bio" class="flex-nav-element">Biography</li>
+            <li href="#about" class="flex-nav-item">About me</li>
+            <li href="#likes" class="flex-nav-item">Likes</li>
+            <li href="#contact" class="flex-nav-item">Contact</li>
+            <li href="#bio" class="flex-nav-item">Biography</li>
           </ul>
         </nav>
       </header>
 
       <main class="grid-item-main">
-        <section id="flex-cont-intro">
-          <div class="flex-itm-intro-img">
-            <div class="image-profile-frame"></div>
-          </div>
-          <div class="flex-itm-intro-txt">
-            <p>
-              "Hi, I am learning webdesign at neuefische. I am just taking my
-              first steps by creating this website."
-            </p>
-          </div>
-        </section>
+        <div class="grid-cont-main-content"> <!--content-container starts here-->
+          <section id="flex-cont-intro" class="grid-cont-item">
+            <div class="flex-itm-intro-img">
+              <div class="image-profile-frame"></div>
+            </div>
+            <div class="flex-itm-intro-txt">
+              <p>
+                "Hi, I am learning webdesign at neuefische. I am just taking my
+                first steps by creating this website."
+              </p>
+            </div>
+          </section>
 
-        <section>
+        <section class="grid-cont-item">
           <h2 id="likes">Likes</h2>
           <nav class="nav-activities">
             <div class="flex-cont-likes">
@@ -61,7 +62,7 @@
               <!--alt-text? Here or in stylesheet-->
             </div></nav>
         </section>
-        <article class="body-txt">
+        <article class="body-txt" class="grid-cont-item">
           <div id="leadclimb-txt">
             <h3>Lead climbing</h3>
          
@@ -78,7 +79,7 @@
             </p>
           </div>
         </article>
-        <article class="body-txt">
+        <article class="body-txt" class="grid-cont-item">
           <div >
             <h3 id="slacklining-txt">Slacklining</h3>
          
@@ -96,6 +97,7 @@
           </div>
         </article>
         <section>
+        </div>
           <div id="contact">
             <h2 id="headline_of_contact">Get in touch</h2>
             <h3>Num:</h3>
@@ -110,21 +112,21 @@
             <img
               src="images/Octocat.jpg"
               alt="Here's an image of Octocat"
-              class="img_socialmedia"
+              class="img-socialmedia"
               class="sm-block"
           /><p class="sm-name">GitHub</p></a></div>
            <div class="sm-flex-item"> <a href="https://codepen.io/" target="_blank"
             ><img
               src="images/codepen.webp"
               alt="Here's the codepen Logo"
-              class="img_socialmedia"
+              class="img-socialmedia"
               class="sm-block"
           /><p class="sm-name">Codepen</p></a></div>
            <div class="sm-flex-item"> <a href="https://de.linkedin.com" target="_blank"
             ><img
               src="images/linkedin.png"
               alt="Here's the linkedin Logo"
-              class="img_socialmedia"
+              class="img-socialmedia"
               class="sm-block"
           /><p class="sm-name">LinkedIn</p></a></div>
           </div>
@@ -148,7 +150,8 @@
         </section>
 
         <section id="bio">
-<div class="body-txt">          <h2 id="head_of_biography">Biography</h2>
+<div class="body-txt">          
+  <h2 id="head_of_biography">Biography</h2>
   <ul class="bio-list">
     <li>2021 Eintrag</li>
     <li>2015 Eintrag</li>
