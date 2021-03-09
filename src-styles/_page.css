@@ -1,9 +1,8 @@
-@import "./color.css";
 /* basic grid-layout, sets grid for head, body and footer */
-.grid-layout-body {
+.grid-cont-body {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 280px 1fr; /*1fr 280px 1fr;*/
+  grid-template-columns: 1fr 280px 1fr;
   grid-template-rows: auto auto 80px;
 }
 
@@ -23,28 +22,29 @@
 }
 /*Basic style for body, Head, main, footer*/
 body {
+  box-sizing: border-box;
+  background-color: #e6a937;
   font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
-  background-color: #e6a937;
-  box-sizing: border-box;
 }
 header {
-  background-color: var(--green); /*rgb(166, 213, 219);*/
+  background-color: var(--background-header); /*rgb(166, 213, 219);*/
   margin-bottom: 5px;
   padding: 10px;
 }
 
 main {
-  background-color: deeppink;
+  background-color: var(--background-main);
   margin: 5px 0;
   padding: 10px;
 }
 
 footer {
-  background-color: darksalmon;
+  background-color: var(--background-footer);
   margin-top: 5px;
 }
 
+/* link styles*/
 a:visited {
   color: red;
 }
@@ -53,7 +53,7 @@ a:link {
   color: black;
 }
 /*more detailed styling on different elements from top to bottom
-*/
+  */
 
 .grid-item-header {
   grid-column: 2 / 3;
@@ -83,7 +83,7 @@ h1 {
   list-style-type: none;
   padding: 0;
 }
-.flex-nav-element {
+.flex-nav-item {
   font-size: 10px;
   background-color: darkseagreen;
   padding: 0 4px;
@@ -101,29 +101,23 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-.image-profile-frame {
-  width: 100px;
-  height: 100px;
-  background-image: url("images/img_of_Manuel.jpg");
-  background-size: cover;
-  border-radius: 100%;
-}
 .flex-itm-intro-img {
   background-color: whitesmoke;
   width: 1fr;
   padding: 10px;
 }
+
 .image-profile-frame {
   width: 110px;
   height: 110px;
-  background-image: url("images/img_of_Manuel.jpg");
+  background-image: url("../images/img_of_Manuel.jpg");
   background-size: cover;
   border-radius: 100%;
 }
 .flex-itm-intro-txt {
   background-color: rgb(111, 180, 111);
-  width: 1fr;
-  height: 130px;
+  width: var(--nav-img-size);
+  height: var(--nav-img-size);
   padding: 0px 10px;
   font-size: x-small;
   font-style: italic;
@@ -140,40 +134,40 @@ h1 {
   width: 1fr;
 }
 .likes-images {
-  width: 130px;
-  height: 130px;
+  width: var(--nav-img-size);
+  height: var(--nav-img-size);
 }
 
 .slacklining {
-  width: 130px;
-  height: 130px;
-  background-image: url("images/slackline.jpg");
+  width: var(--nav-img-size);
+  height: var(--nav-img-size);
+  background-image: url("../images/slackline.jpg");
   background-size: cover;
 }
 .lead-climbing {
-  width: 130px;
-  height: 130px;
-  background-image: url("images/lead-climbing.jpg");
+  width: var(--nav-img-size);
+  height: var(--nav-img-size);
+  background-image: url("../images/lead-climbing.jpg");
   background-size: cover;
 }
 .gym-climbing {
-  width: 130px;
-  height: 130px;
-  background-image: url("images/gym-climbing.jpg");
+  width: var(--nav-img-size);
+  height: var(--nav-img-size);
+  background-image: url("../images/gym-climbing.jpg");
   background-size: cover;
 }
 
 .wood {
-  width: 130px;
-  height: 130px;
-  background-image: url("images/wood.jpg");
+  width: var(--nav-img-size);
+  height: var(--nav-img-size);
+  background-image: url("../images/wood.jpg");
   background-size: cover;
 }
 
 .body-txt {
   padding: 5px;
   margin-top: 10px;
-  background-color: rgb(233, 99, 222);
+  background-color: var(--background-txtboxes);
 }
 
 #contact {
@@ -192,7 +186,7 @@ h1 {
   align-items: center;
   padding-top: 10px;
 }
-.img_socialmedia {
+.img-socialmedia {
   width: 100px;
   height: 100px;
   display: block;
