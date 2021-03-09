@@ -1,3 +1,4 @@
+@import "./color.css";
 /* basic grid-layout, sets grid for head, body and footer */
 .grid-layout-body {
   display: grid;
@@ -28,7 +29,7 @@ body {
   box-sizing: border-box;
 }
 header {
-  background-color: rgb(166, 213, 219);
+  background-color: var(--green); /*rgb(166, 213, 219);*/
   margin-bottom: 5px;
   padding: 10px;
 }
@@ -51,7 +52,23 @@ a:link {
   text-decoration: none;
   color: black;
 }
-/*more detailed styling on different elements from top to bottom*/
+/*more detailed styling on different elements from top to bottom
+*/
+
+.grid-item-header {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.grid-item-main {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.grid-item-footer {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
 /*header*/
 h1 {
   text-align: center;
@@ -76,6 +93,8 @@ h1 {
   text-transform: uppercase;
 }
 /*main*/
+/*grid for main-content*/
+
 /*intro-box with photo and short text*/
 #flex-cont-intro {
   display: flex;

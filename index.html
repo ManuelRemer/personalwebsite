@@ -28,19 +28,20 @@
       </header>
 
       <main class="grid-item-main">
-        <section id="flex-cont-intro">
-          <div class="flex-itm-intro-img">
-            <div class="image-profile-frame"></div>
-          </div>
-          <div class="flex-itm-intro-txt">
-            <p>
-              "Hi, I am learning webdesign at neuefische. I am just taking my
-              first steps by creating this website."
-            </p>
-          </div>
-        </section>
+        <div class="grid-cont-main-content"> <!--content-container starts here-->
+          <section id="flex-cont-intro" class="grid-cont-item">
+            <div class="flex-itm-intro-img">
+              <div class="image-profile-frame"></div>
+            </div>
+            <div class="flex-itm-intro-txt">
+              <p>
+                "Hi, I am learning webdesign at neuefische. I am just taking my
+                first steps by creating this website."
+              </p>
+            </div>
+          </section>
 
-        <section>
+        <section class="grid-cont-item">
           <h2 id="likes">Likes</h2>
           <nav class="nav-activities">
             <div class="flex-cont-likes">
@@ -61,7 +62,7 @@
               <!--alt-text? Here or in stylesheet-->
             </div></nav>
         </section>
-        <article class="body-txt">
+        <article class="body-txt" class="grid-cont-item">
           <div id="leadclimb-txt">
             <h3>Lead climbing</h3>
          
@@ -78,7 +79,7 @@
             </p>
           </div>
         </article>
-        <article class="body-txt">
+        <article class="body-txt" class="grid-cont-item">
           <div >
             <h3 id="slacklining-txt">Slacklining</h3>
          
@@ -96,6 +97,7 @@
           </div>
         </article>
         <section>
+        </div>
           <div id="contact">
             <h2 id="headline_of_contact">Get in touch</h2>
             <h3>Num:</h3>
@@ -148,7 +150,8 @@
         </section>
 
         <section id="bio">
-<div class="body-txt">          <h2 id="head_of_biography">Biography</h2>
+<div class="body-txt">          
+  <h2 id="head_of_biography">Biography</h2>
   <ul class="bio-list">
     <li>2021 Eintrag</li>
     <li>2015 Eintrag</li>
